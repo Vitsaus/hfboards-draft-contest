@@ -3,9 +3,9 @@ import { createBoardForIceybigbucks } from "./board/ Iceybigbucks";
 import { createBoardForMichaelFarrell } from "./board/ MichaelFarrell";
 import { createBoardForRandomTask26 } from "./board/ RandomTask26";
 import { createBoardFor57special } from "./board/57special";
-import { getBoardForAntonche } from "./board/Antonche";
+import { createBoardForAntonche } from "./board/Antonche";
 import { createBoardForArwin } from "./board/Arwin";
-import { getBoardForBeauterham } from "./board/Beauterham";
+import { createBoardForBeauterham } from "./board/Beauterham";
 import { createBoardForBhrangerfan0809 } from "./board/Bhrangerfan0809";
 import { createBoardForBizz } from "./board/Bizz";
 import { createBoardForBrettRichardson } from "./board/BrettRichardson";
@@ -17,27 +17,27 @@ import { createBoardForCosmix } from "./board/Cosmix";
 import { createBoardForDanyhabsfan } from "./board/danyhabsfan";
 import { createBoardForDollardStLaurent } from "./board/DollardStLaurent";
 import { createBoardForDraftconsensus } from "./board/draftconsensus";
-import { getBoardForGermanSpitfire } from "./board/GermanSpitfire";
+import { createBoardForGermanSpitfire } from "./board/GermanSpitfire";
 import { createBoardForGoldenhands } from "./board/Goldenhands";
 import { createBoardForGretzkys99Problems } from "./board/Gretzkys99Problems";
-import { getBoardForHamilton_Bulldogs } from "./board/HamiltonBulldogs";
-import { getBoardForHer_Slave } from "./board/HerSlave";
+import { createBoardForHamilton_Bulldogs } from "./board/HamiltonBulldogs";
+import { createBoardForHer_Slave } from "./board/HerSlave";
 import { createBoardForHolyJumpin40 } from "./board/HolyJumpin40";
 import { createBoardForHugeInTheShire } from "./board/HugeInTheShire";
-import { getBoardForIlvins } from "./board/Ilvins";
+import { createBoardForIlvins } from "./board/Ilvins";
 import { createBoardForJT3 } from "./board/JT3";
-import { getBoardForKaprizovSaveUs } from "./board/KaprizovSaveUs";
+import { createBoardForKaprizovSaveUs } from "./board/KaprizovSaveUs";
 import { createBoardForKearns } from "./board/Kearns";
 import { createBoardForLavarBall } from "./board/LavarBall";
 import { createBoardForLJ7 } from "./board/LJ7";
-import { getBoardForM0pe } from "./board/m0pe";
-import { getBoardForMaffew } from "./board/Maffew";
-import { getBoardForMajormajor } from "./board/majormajor";
-import { getBoardForMaplebeasts } from "./board/Maplebeasts";
-import { getBoardForMattEllis } from "./board/MattEllis";
-import { getBoardForMGK } from "./board/MGK";
+import { createBoardForM0pe } from "./board/m0pe";
+import { createBoardForMaffew } from "./board/Maffew";
+import { createBoardForMajormajor } from "./board/majormajor";
+import { createBoardForMaplebeasts } from "./board/Maplebeasts";
+import { createBoardForMattEllis } from "./board/MattEllis";
+import { createBoardForMGK } from "./board/MGK";
 import { createBoardForNewdimension } from "./board/newdimension";
-import { getBoardForNotTooWideArena } from "./board/NotTooWideArena";
+import { createBoardForNotTooWideArena } from "./board/NotTooWideArena";
 import { createBoardForObtenebris } from "./board/Obtenebris";
 import { createBoardForODoyle } from "./board/ODoyle";
 import { createBoardForPatmac40 } from "./board/Patmac40";
@@ -46,7 +46,7 @@ import { createBoardForPKSpecialist } from "./board/PKSpecialist";
 import { createBoardForPostBradMalone } from "./board/PostBradMalone";
 import { createBoardForPuckProspects } from "./board/PuckProspects";
 import { createBoardForRememberTheName } from "./board/RememberTheName";
-import { getBoardForRmx3466 } from "./board/Rmx3466";
+import { createBoardForRmx3466 } from "./board/Rmx3466";
 import { createBoardForRyancallahan } from "./board/ryancallahan";
 import { createBoardForSaabman0508 } from "./board/Saabman0508";
 import { createBoardForSlimnipsu } from "./board/slimnipsu";
@@ -54,14 +54,14 @@ import { createBoardForSpfan } from "./board/spfan";
 import { createBoardForStanleyjub } from "./board/Stanleyjub";
 import { createBoardForStewie_Griffin } from "./board/StewieGriffin";
 import { createBoardForTechcoockie } from "./board/Techcoockie";
-import { getBoardForTheSnipeshow91 } from "./board/TheSnipeshow91";
-import { getBoardForTheYardMachine } from "./board/TheYardMachine";
-import { getBoardForTrick9 } from "./board/Trick9";
+import { createBoardForTheSnipeshow91 } from "./board/TheSnipeshow91";
+import { createBoardForTheYardMachine } from "./board/TheYardMachine";
+import { createBoardForTrick9 } from "./board/Trick9";
 import { createBoardForTryamkin } from "./board/Tryamkin";
 import { createBoardForUncleben } from "./board/uncleben";
-import { getBoardForVildurson } from "./board/Vildurson";
+import { createBoardForVildurson } from "./board/Vildurson";
 import { createBoardForWandering_Cynic } from "./board/WanderingCynic";
-import { getBoardForYotes4Cup } from "./board/Yotes4Cup";
+import { createBoardForYotes4Cup } from "./board/Yotes4Cup";
 import { createBoardFor_vivelequebec_ } from "./board/_vivelequebec_";
 import { getPlayers } from "./players";
 
@@ -69,26 +69,26 @@ export type Picker = (name: string) => TPick
 
 export function getBoards(players: TPlayer[]): TBoard[] {
     return [
-        getBoardForVildurson(players),
-        getBoardForYotes4Cup(players),
-        getBoardForTrick9(players),
-        getBoardForHamilton_Bulldogs(players),
-        getBoardForHer_Slave(players),
-        getBoardForMattEllis(players),
-        getBoardForMaplebeasts(players),
-        getBoardForMaffew(players),
-        getBoardForTheSnipeshow91(players),
-        getBoardForMajormajor(players),
-        getBoardForBeauterham(players),
-        getBoardForIlvins(players),
-        getBoardForRmx3466(players),
-        getBoardForKaprizovSaveUs(players),
-        getBoardForMGK(players),
-        getBoardForGermanSpitfire(players),
-        getBoardForTheYardMachine(players),
-        getBoardForNotTooWideArena(players),
-        getBoardForAntonche(players),
-        getBoardForM0pe(players),
+        createBoardForVildurson(players),
+        createBoardForYotes4Cup(players),
+        createBoardForTrick9(players),
+        createBoardForHamilton_Bulldogs(players),
+        createBoardForHer_Slave(players),
+        createBoardForMattEllis(players),
+        createBoardForMaplebeasts(players),
+        createBoardForMaffew(players),
+        createBoardForTheSnipeshow91(players),
+        createBoardForMajormajor(players),
+        createBoardForBeauterham(players),
+        createBoardForIlvins(players),
+        createBoardForRmx3466(players),
+        createBoardForKaprizovSaveUs(players),
+        createBoardForMGK(players),
+        createBoardForGermanSpitfire(players),
+        createBoardForTheYardMachine(players),
+        createBoardForNotTooWideArena(players),
+        createBoardForAntonche(players),
+        createBoardForM0pe(players),
         createBoardForPKSpecialist(players),
         createBoardForDollardStLaurent(players),
         createBoardForObtenebris(players),

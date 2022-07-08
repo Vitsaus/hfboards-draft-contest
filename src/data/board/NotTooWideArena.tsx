@@ -1,7 +1,7 @@
 import { TBoard, TPlayer } from "../../types";
 import { getBoardFromSnippet } from "../boards";
 
-export function getBoardForNotTooWideArena(players: TPlayer[]): TBoard {
+export function createBoardForNotTooWideArena(players: TPlayer[]): TBoard {
     return getBoardFromSnippet(players, "NotTooWideArena", `
     1. MTL: Wright
     2. NJD: Cooley

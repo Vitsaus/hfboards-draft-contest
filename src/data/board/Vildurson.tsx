@@ -1,7 +1,7 @@
 import { TBoard, TPlayer } from "../../types";
 import { getBoardFromSnippet, } from "../boards";
 
-export function getBoardForVildurson(players: TPlayer[]): TBoard {
+export function createBoardForVildurson(players: TPlayer[]): TBoard {
     return getBoardFromSnippet(players, "Vildurson", `
     1. MTL: Wright
     2. NJD: Slafkovsky

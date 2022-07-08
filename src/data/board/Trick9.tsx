@@ -1,7 +1,7 @@
 import { TBoard, TPlayer } from "../../types";
 import { getBoardFromSnippet } from "../boards";
 
-export function getBoardForTrick9(players: TPlayer[]): TBoard {
+export function createBoardForTrick9(players: TPlayer[]): TBoard {
     return getBoardFromSnippet(players, "trick9", `
     MTL #1: Wright
     NJD #2: Slafkovsky

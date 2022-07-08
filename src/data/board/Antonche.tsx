@@ -1,7 +1,7 @@
 import { TBoard, TPlayer } from "../../types";
 import { getBoardFromSnippet } from "../boards";
 
-export function getBoardForAntonche(players: TPlayer[]): TBoard {
+export function createBoardForAntonche(players: TPlayer[]): TBoard {
     return getBoardFromSnippet(players, "Antonche", `
     1. MTL: Wright
     2. NJD: Slafkovsky

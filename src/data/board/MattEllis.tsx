@@ -1,7 +1,7 @@
 import { TBoard, TPlayer } from "../../types";
 import { getBoardFromSnippet, Picker } from "../boards";
 
-export function getBoardForMattEllis(players: TPlayer[]): TBoard {
+export function createBoardForMattEllis(players: TPlayer[]): TBoard {
     return getBoardFromSnippet(players, "MattEllis", `
     1. Montreal Canadiens: Juraj Slafkovsky
     2. New Jersey Devils: Shane Wright

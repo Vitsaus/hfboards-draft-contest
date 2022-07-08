@@ -3,7 +3,7 @@
 import { TBoard, TPlayer } from "../../types";
 import { getBoardFromSnippet, Picker } from "../boards";
 
-export function getBoardForTheYardMachine(players: TPlayer[]): TBoard {
+export function createBoardForTheYardMachine(players: TPlayer[]): TBoard {
     return getBoardFromSnippet(players, "TheYardMachine", `
     1. MTL : Wright
     2. NJD: Slafkovsky

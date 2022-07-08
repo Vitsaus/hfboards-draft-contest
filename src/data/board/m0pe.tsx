@@ -1,7 +1,7 @@
 import { TBoard, TPlayer } from "../../types";
 import { getBoardFromSnippet } from "../boards";
 
-export function getBoardForM0pe(players: TPlayer[]): TBoard {
+export function createBoardForM0pe(players: TPlayer[]): TBoard {
     return getBoardFromSnippet(players, "m0pe", `
     1. MTL: Shane Wright
     2. NJD: Juraj Slafkovsky

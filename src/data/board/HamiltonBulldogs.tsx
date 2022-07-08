@@ -1,7 +1,7 @@
 import { TBoard, TPlayer } from "../../types";
 import { getBoardFromSnippet, Picker } from "../boards";
 
-export function getBoardForHamilton_Bulldogs(players: TPlayer[]): TBoard {
+export function createBoardForHamilton_Bulldogs(players: TPlayer[]): TBoard {
     return getBoardFromSnippet(players, "Hamilton Bulldogs", `
     1. MTL: Shane Wright
     2. NJD: Juraj Slafkovsky

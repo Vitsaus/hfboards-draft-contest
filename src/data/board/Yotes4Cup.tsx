@@ -1,7 +1,7 @@
 import { TBoard, TPlayer } from "../../types";
 import { getBoardFromSnippet, Picker } from "../boards";
 
-export function getBoardForYotes4Cup(players: TPlayer[]): TBoard {
+export function createBoardForYotes4Cup(players: TPlayer[]): TBoard {
     return getBoardFromSnippet(players, "Yotes4Cup", `
     1. Montreal Canadiens: Wright
     2. New Jersey Devils: Slafkovsky
