@@ -14,6 +14,7 @@ export function Layout(props: Props) {
         <div>
             <div>
                 <Link to="/">Boards</Link>
+                {" - "}
                 <Link to="/players">Players</Link>
                 <br /><br />
             </div>
