@@ -33,7 +33,7 @@ export function getPlayers(): TPlayer[] {
         createPlayer(16, "Noah Östlund"),
         createPlayer(21, "Owen Pickering"),
         createPlayer(12, "Denton Mateychuk"),
-        createPlayer(0, "Ryan Chesley"),
+        createPlayer(37, "Ryan Chesley"),
         createPlayer(18, "Lian Bichsel"),
         createPlayer(14, "Rutger McGroarty"),
         createPlayer(22, "Nathan Gaucher"),
@@ -41,10 +41,10 @@ export function getPlayers(): TPlayer[] {
         createPlayer(26, "Filip Mesar"),
         createPlayer(25, "Sam Rinzel"),
         createPlayer(0, "Tristan Luneau"),
-        createPlayer(0, "Owen Beck"),
+        createPlayer(33, "Owen Beck"),
         createPlayer(0, "Seamus Casey"),
         createPlayer(0, "Calle Odelius"),
-        createPlayer(0, "Jagger Firkus"),
+        createPlayer(35, "Jagger Firkus"),
         createPlayer(0, "Jack Hughes"),
         createPlayer(0, "Lane Hutson"),
         createPlayer(0, "Mattias Hävelid"),
@@ -64,6 +64,11 @@ export function getPlayers(): TPlayer[] {
         createPlayer(0, "Adam Sykora"),
         createPlayer(0, "Vladimir Grudinin"),
         createPlayer(0, "Tyler Brennan"),
+        createPlayer(34, "Cameron Lund"),
+        createPlayer(36, "Artem Duda"),
+        createPlayer(37, "Frazer Minten"),
+        createPlayer(38, "Paul Ludwinski"),
+        createPlayer(39, "Dylan James"),
     ];
 }
 
